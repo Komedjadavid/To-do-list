@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-do list</title>
+  <link rel="stylesheet" href="todolistcss.css"/>
+</head>
+<body>
+  <h1>To-do list</h1>
+  
+  <!-- Étape 1 : Formulaire -->
+  <section class="card" id="step1">
+    <div class="formulaire">
+      <h1>Créer des tâches</h1>
+      <form id="formulaire">
+        <label for="nom">Nommez la tâche</label>
+        <input type="text" name="nom" id="nom" />
+        <label for="description">Décrivez la tâche à réaliser</label>
+        <input type="text" name="description" id="description" />
+        <button type="submit">Ajouter</button>
+      </form>
+      
+    
+    </div>
+  </section>
+
+  <!-- Étape 2 : Liste des tâches à faire -->
+  <section class="card" id="step2" style="display: none;">
+    <div class="todo">
+      
+      
+    </div>
+  </section>
+
+  <!-- Étape 3 : Liste des tâches réalisées -->
+  <section class="card" id="step3" style="display: none;">
+    <div class="done">
+      <h1>Les tâches réalisées</h1>
+      <p>Les tâches terminées s’afficheront ici.</p>
+    </div>
+  </section>
+  <div class="buttons">
+    <button id="backBtn">Back</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script src="todolist.js"></script>
+</body>
+</html>
